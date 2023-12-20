@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onside Wear - Спортивные формы на заказ</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #111; /* Темный цвет фона */
+            color: #fff;
+            perspective: 1000px;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            animation: fadeIn 1.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        section {
+            padding: 2em;
+            text-align: center;
+            margin-bottom: 60px;
+            background-color: rgba(255, 255, 255, 0.5); /* Уменьшенная прозрачность белого фона */
+            border-radius: 10px;
+        }
+
+        .slider {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .slick-slide img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .card {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .card img {
+            max-width: 300px;
+        }
+
+        .quote {
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote p {
+            color: black;
+        }
+
+        .map {
+            height: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .scroll-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .scroll-to-top:hover {
+            background-color: #555;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 1em;
+            }
+
+            .slider {
+                max-width: 100%;
+            }
+
+            .card {
+                margin: 10px;
+            }
+
+            .map {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="img/plan.jpg" alt="Onside Wear Logo" style="max-width: 200px; height: auto;">
+        <h1>Onside Wear</h1>
+        <p>Ваш выбор для спортивных форм на заказ</p>
+    </header>
+
+    <section>
+        <h2>Добро пожаловать в Onside Wear!</h2>
+        <p>Мы предлагаем высококачественные спортивные формы на заказ для вашей команды или индивидуального использования. Наши формы соответствуют самым высоким стандартам качества и стиля.</p>
+        <p>Выберите стиль, цвета и добавьте свой логотип для создания уникального дизайна вашей формы.</p>
+        <h3>Контакты для заказа:</h3>
+        <ul>
+            <li>+7 705 606 7733 - Б. Алдияр</li>
+            <li>+7 775 090 3644 - О. Зангар</li>
+            <li>+7 705 574 3724 - К. Темирбек</li>
+        </ul>
+    </section>
+    <h1 align="center">Примеры дизайна форм</h1>
+    <section class="slider">
+        
+        <div>
+            <img src="img/design1.png" alt="Пример 1">
+        </div>
+        <div>
+            <img src="img/design2.png" alt="Пример 2">
+        </div>
+        <div>
+            <img src="img/design3.png" alt="Пример 3">
+        </div>
+    </section>
+
+    <!-- <section class="main">
+        <h2>Примеры дизайна форм</h2>
+        <div class="cardlist">
+            <div class="card">
+                <h3>Дизайн 1</h3>
+                <img src="/img/design1.png" alt="Дизайн 1">
+                <p>Уникальный стиль для вашей команды.</p>
+            </div>
+
+            <div class="card">
+                <h3>Дизайн 2</h3>
+                <img src="img/design2.png" alt="Дизайн 2">
+                <p>Яркие цвета и современный дизайн.</p>
+            </div>
+
+            <div class="card">
+                <h3>Дизайн 3</h3>
+                <img src="img/design3.png" alt="Дизайн 3">
+                <p>Специальные возможности для индивидуальных заказов.</p>
+            </div>
+        </div>
+    </section> -->
+
+    <section>
+        <h2>Цитаты от довольных клиентов</h2>
+        <div class="quote">
+            <p>"Onside Wear - лучший выбор для нашей команды. Отличное качество и стильный дизайн!"</p>
+            <p>- Месси, капитан команды "Барселона"</p>
+        </div>
+
+        <div class="quote">
+            <p>"Мы довольны нашими новыми формами от Onside Wear. Профессионализм и индивидуальный подход!"</p>
+            <p>- Роналдо, участник турнира по футболу</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Мы на карте</h2>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2442.431020497962!2d76.93987667704093!3d52.25371765590968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42f834be5f3dfef5%3A0x189a446ba1ad82fb!2z0J3QsNC30LDRgNCx0LDQtdCyINCY0L3RgtC10LvQu9C10LrRgtGD0LDQu9GM0L3QsNGPINGI0LrQvtC70LAg0LMuINCf0LDQstC70L7QtNCw0YA!5e0!3m2!1sru!2skz!4v1703094891448!5m2!1sru!2skz" width="80%" height="80%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p align="right">&copy; 2023 Onside Wear. Все права защищены.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+
+        function scrollToTop() {
+            $('html, body').animate({scrollTop: 0}, 800);
+        }
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $('.scroll-to-top').fadeIn();
+            } else {
+                $('.scroll-to-top').fadeOut();
+            }
+        });
+    </script>
+</body>
+</html>
